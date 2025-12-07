@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/IN-en-20250609-TRIFECTA-perspective_32b70b51-20d4-46db-8a1a-3d5428be5f0e_large.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    height: 200px;
+
+}
+
+nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .logo>svg {
+        width: 40%;
+        color: #e50914;
+        margin-left: 80px;
+    }
+}
+
+.btn {
+    margin-right: 70px;
+    display: flex;
+    flex-direction: row;
+
+    .dd1{
+        align-items: center;
+        background: black;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 6px 15px;
+        box-sizing: border-box;
+    }
+    span {
+        font-size: 16px;
+    }
+    .language{
+      background: black;
+      color: white;
+      border: none;
+      font-size: 16px;
+      outline: none;
+      
+    }
+    .btnc {
+        padding: 7px 15px;
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .btn1 {
+        margin: 5px;
+        background-color: red;
+    }
+}
+
+.header-c1 {
+    width: 50%;
+    text-align: center;
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 19px;
+        line-height: 50px;
+    }
+
+    input {
+        padding: 20px 100px 15px 14px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border-radius: 4px;
+        border: 1px solid rgba(246, 248, 248, 0.5) !important;
+        font-size: 18px;
+
+    }
+}
+
+.main1 {
+    color: white;
+    margin-left: 125px;
+    margin-right: 125px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.t1 {
+    display: flex;
+    gap: 50px;
+    margin-left: 20px;
+}
+
+.box {
+    width: 180px;
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .num {
+        color: black;
+        text-shadow: white;
+        font-size: 6rem;
+        font-weight: 900;
+        position: absolute;
+        top: 140px;
+        left: -20px;
+        -webkit-text-stroke: 1px white;
+    }
+
+    &&:hover {
+        z-index: 1;
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+}
+
+.box1 {
+    background-image: url(https://occ-0-2164-1009.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYUCgDPIk4LvnEw_j-dC5ca65oxm4yP2Z7RFKlRcN6WYzCwNA4MhTNqTRrSAK9zND3cSjrYEpbQculmTCXPD09ZbvdCosdbuOjc.webp?r=062);
+}
+
+.box2 {
+    background-image: url(https://occ-0-2164-1009.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYGL4_ns5MGTE5-Yd3ZQVB5apyY9yxQ39lxjT_27ehdoGzrxRwNc4osgXEeifcv9yO_MgMySL-p6hMxtQZnIEkZmyglIJ7wm7ik.webp?r=c23);
+}
+
+.box3 {
+    background-image: url(https://occ-0-2164-1009.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQqOh2yhpKE8385dV9hjlxxXtG63RjSjrlNOkx2yLuGMYe8JFTnA9ScVsioAhTa9Ds34ERhB2R4aBFUng1j54IFwl5JvjgVmGEU.webp?r=d66);
+}
+
+.box4 {
+    background-image: url(https://occ-0-2164-1009.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWtQdcUd4n6VKz6HTm_IbI2cOq0VDU7fDQpomIXBLuCYqtJ4j8hj2pz7j6spnX2osjRgTMJQ9xkMieYZWqC6xC8G4tGlTLJBm3I.webp?r=cc2);
+}
+
+.box5 {
+    background-image: url(https://occ-0-2164-1009.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYVcRfFB91jy3f8-_Alb6H4RUzqXFRA7ejjOfCOXF20XLRVeCyT3ZFEimKbZAimt2ayVUWXSnp6ApNxpoK0mA3XzJD__irrDkdMD6lDrOFPSvQqP8s0xn2dNBaU9JxIu4lUd.webp?r=63b);
+}
+
+.subtitle {
+    margin-top: 7%;
+    margin-bottom: 10px;
+}
+
+.r1 {
+    display: flex;
+    gap: 15px;
+}
+
+.r1-box {
+    width: 290px;
+    height: 280px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #1b1e3d, #210f19);
+    padding: 15px;
+    position: relative;
+
+    p {
+        font-size: 14px;
+        color: #adabb3;
+    }
+
+    svg {
+        width: 25%;
+        position: absolute;
+        top: 65%;
+        right: 5%;
+    }
+}
+
+.main2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 7%;
+
+    .fbox {
+        font-size: 22px;
+        padding: 20px;
+        background-color: #2d2d2d;
+
+        &&:hover{
+            background-color: #414141 ;
+            color: white;
+        }
+
+        i {
+            float: right;
+            font-size: 30px;
+
+
+        }
+    }
+}
+
+input {
+        padding: 20px 250px 15px 14px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border-radius: 4px;
+        border: 1px solid rgba(246, 248, 248, 0.5) !important;
+        font-size: 18px;
+}
+
+
+.getstart {
+    padding: 15px 30px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+    margin-left: 5px;
+
+    i {
+        margin-left: 10px;
+    }
+
+    &&:hover {
+        cursor: pointer;
+        background-color: rgb(205, 7, 7);
+    }
+}
+
+.m1{
+    font-size: 19px;
+    line-height: 50px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 5%;
+
+    a {
+        color: white;
+    }
+
+    .footermian {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+
+        ul {
+            list-style: none;
+            line-height: 2rem;
+        }
+    }
+
+    .footerlast {
+        margin-top: 3%;
+        margin-bottom: 10%;
+        line-height: 3rem;
+    }
+}
+
+.c1 {
+    height: 100px;
+    border-top-left-radius: 90% 100%;
+    border-top-right-radius: 90% 100%;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    width: 100%;
+    position: relative;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    border: solid .25rem transparent;
+    border-bottom: none;
+    background-clip: padding-box;
+}
+
+.c1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(184, 40, 105, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(184, 40, 105, 1) 84%);
+    
+}
