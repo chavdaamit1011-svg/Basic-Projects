@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+      
+    
+    <link rel="shortcut icon" href="https://archive.org/download/mx-player-icon/mx-player-icon.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="movie.css">
+</head>
+
+<body>
+    <div class="main1">
+        <div class="nav">
+            <div class="b1">
+                <a href="">Prime Video</a>
+            </div>
+            <div class="b2">
+                <a href="">Home</a>
+                <a href="">Movies</a>
+                <a href="">TV shows</a>
+                <a href="">Live TV</a>
+            </div>
+            <hr>
+            <div class="b3">
+                <div class="icon">
+                    <span class="material-symbols-outlined">
+                        dashboard_customize
+                    </span>
+                    <a href=""> Subscriptions</a>
+                </div>
+            </div>
+
+            <div class="b4">
+                <span  class="material-symbols-outlined">
+                    search
+                </span>
+              
+
+                <div class="dd1">
+                    <a href="#" class="boxmenu"> EN
+                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    </a>
+                    <div class="menu">
+                        <ul class="txt" style="width: 230px;">
+                           <li><span>Bahasa Indonesia</span></li>
+                            <li><span>Bahasa Melayu</span></li>
+                            <li><span>Dansk</span></li>
+                            <li><span>Deutsch</span></li>
+                            <li><span>English</span></li>
+                            <li><span>Español</span></li>
+                            <li><span>Español Latinoamérica</span></li>
+                            <li><span>Français</span></li>
+                        </ul>
+
+                        <ul class="txt" style="width: 200px;">
+                            <li><span>Italiano</span></li>
+                            <li><span>Magyar</span></li>
+                            <li><span>Nederlands</span></li>
+                            <li><span>Norsk</span></li>
+                            <li><span>Polski</span></li>
+                            <li><span>Português (Brasil)</span></li>
+                            <li><span>Português (Portugal)</span></li>
+                            <li><span>Română</span></li>
+                        </ul>
+
+                        <ul class="txt" style="width: 150px;">
+                            <li><span>Suomi</span></li>
+                            <li><span>Svenska</span></li>
+                            <li><span>Türkçe</span></li>
+                            <li><span>Wikang Filipino</span></li>
+                            <li><span>Čeština</span></li>
+                            <li><span>Ελληνικά</span></li>
+                            <li><span>Русский</span></li>
+                            <li><span>עברית</span></li>
+                        </ul>
+
+                        <ul class="txt" style="width: 120px;">
+                           <li><span>العربية</span></li>
+                            <li><span>हिंदी </span></li>
+                            <li><span>தமிழ்</span></li>
+                            <li><span>తెలుగు</span></li>
+                            <li><span>ไทย</span></li>
+                            <li><span>日本語</span></li>
+                            <li><span>简体中文</span></li>
+                            <li><span>繁體中文</span></li>
+                        </ul>
+                        <ul class="txt" style="width: 100px;">
+                           <li><span>한국어</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                
+                <div class="b6">
+                <span class="material-symbols-outlined">
+                    apps
+                </span>
+                </div>
+                <div class="imge">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNTAgMTAwYzI3LjYxNCAwIDUwLTIyLjM4NiA1MC01MFM3Ny42MTQgMCA1MCAwIDAgMjIuMzg2IDAgNTBzMjIuMzg2IDUwIDUwIDUwWiIgZmlsbD0idXJsKCNhKSIvPjxwYXRoIGQ9Ik04Ni43MTggODMuOTM5Qzc3LjU4MyA5My44MTYgNjQuNTE0IDEwMCA1MCAxMDBjLTE0LjczIDAtMjcuOTc0LTYuMzctMzcuMTI0LTE2LjUwNiAxLjIxMi0zLjA5IDIuOTIyLTUuOTAyIDUuMzA0LTguMjI4QzI1LjQ2IDY4LjE1NyAzOC40MjUgNjUuMjM1IDUwIDY1LjIzNWMxMS41NTQgMCAyMy42NTUgMi45MDYgMzAuOTMzIDkuOTkzIDIuNTEyIDIuNDQ2IDQuNDA1IDUuNDMgNS43ODUgOC43MVoiIGZpbGw9InVybCgjYikiLz48cGF0aCBkPSJNNjkuNTIgMzcuMTFjLjc5NC0xMi4yMTMtNS44OS0yMi4yNjYtMTkuNDY4LTIyLjI2Ni0xMy41NzkgMC0yMC4yNjMgMTAuMDUzLTE5LjQ2OCAyMi4yNjUuNzk1IDEyLjIxMyA4Ljc5NCAyMC43MDMgMTkuNDY4IDIwLjcwMyAxMC42NzMgMCAxOC42NzMtOC40OSAxOS40NjgtMjAuNzAzWiIgZmlsbD0idXJsKCNjKSIvPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAiIHkxPSIwIiB4Mj0iMTAwIiB5Mj0iMTAwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iIzRDNzE4RSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzJCNDA1MyIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJiIiB4MT0iNDEuNTU0IiB5MT0iMzAuMzQ3IiB4Mj0iODIuNzEyIiB5Mj0iNzEuNTM5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIuODUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJjIiB4MT0iNDEuNTU0IiB5MT0iMzAuMzQ3IiB4Mj0iODIuNzEyIiB5Mj0iNzEuNTM5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIuODUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjwvc3ZnPg=="
+                        alt="" width="35px" height="35px">
+
+                    <div class="dd2">
+                        <h4>Your account</h4>
+                        <br>
+                            <p> Sign In</p>
+                             <p>Help</p>
+                             <p>Watch Anywhere</p>
+
+                    </div>
+                </div>
+
+                <div class="button1">
+
+                    <button>Join Prime</button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+ <img class="d-block w-100" src="https://cdn.cultofmac.com/wp-content/uploads/2025/04/Fountain-of-Youth-movie-poster-1020x574.jpg" alt="" width="100%">
+
+
+    <div class="main-movie">
+        <h1>Movies</h1>
+        <h5>Top movies</h5>
+        <div class="main-movie1">
+            <div class="box1  boxi1">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>STOLEN</p>
+                        <p style="color: #37f0a2;"> #3 in India </p>
+                          <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>Chaos erupts when two privileged young men are mistakenly embroiled in an...</p>
+                    </span>
+                </div>
+
+
+            </div>
+
+
+            <div class="box1  boxi2">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Bhool Chuk Maaf</p>
+                        <p style="color: #37f0a2;"> #4 in India </p>
+                          <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>Ranjan is stuck in a time loop before his wedding, and must complete a noble deed to break...</p>
+                    </span>
+                </div>
+
+
+            </div>
+
+
+            <div class="box1  boxi3">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Stree 2: Sarkate Ka Aatank</p>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                           <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>After the events of Stree, the town of Chanderi is being haunted again. This time,...</p>
+                    </span>
+                </div>
+
+
+            </div>
+
+
+            <div class="box1  boxi4">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>The Accountant 2</p>
+                        <p style="color: #37f0a2;"> #4 in India </p>
+                          <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>Christian Wolff and brother Brax must work together to solve an old acquaintance’s...</p>
+                    </span>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="box1  boxi5">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Odela 2</p>
+                        <p style="color: #37f0a2;"> #9 in India </p>
+                          <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>In Odela 2, Tirupathi returns from the dead, wreaking havoc. Naaga Sadhu Shiva Shakti rises to stop him,...</p>
+                    </span>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="box1  boxi6">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Singham Again</p>
+                           <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">U/A 13+</p>
+                        <p>Bajirao Singham, a resolute cop, navigates his duty and personal life in a gripping tale interwoven with the...</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        
+        <h5>Movies in English</h5>
+        <div class="main-movie1">
+            <div class="box1  boxi7">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Your Fault</p>
+                        <p style="color: #37f0a2;"> #14 in India </p>
+                          <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>Nick and Noah have started their relationship against their parents’ wishes,...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi8">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Babygirl</p>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                           <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>A high-powered CEO puts her career and family on the line when she begins a torrid...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi9">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Red One</p>
+                        <p style="color: #37f0a2;"> #10 in India </p>
+                          <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>After Santa Claus – aka RED ONE – is kidnapped, the North Pole's Head of Securi...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi10">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>A Working Man</p>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                           <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>Construction worker Levon Cade must use the black ops training he's left behind to...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi11">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>The Conjuring (2013)</p>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                           <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>Based on a true story, ghost hunters Lorraine and Ed Warren help a family...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi12">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>My Fault: London</p>
+                        <p style="color: #37f0a2;"> #4 in India </p>
+                          <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>18-year-old Noah moves from America to London, where she meets bad-boy Nick, and discovers there i...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             
+
+        </div>
+<div class="dm">
+         <h5>Drama movies </h5>
+         </div>
+        <div class="main-movie1">
+            <div class="box1  boxi13">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Sky Force</p>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                           <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>During the 1965 Indo-Pak War, Wing Commander Ahuja uncovers a cover-up and...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi14">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Akkada Ammayi Ikkada Abbayi</p>
+                        <p style="color: #37f0a2;"> #8 in India </p>
+                          <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>Krishna, a civil engineer, is sent to a remote village with strange customs, where no...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi15">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Tumbbad</p>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                           <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>In the rural village of Tumbbad, a decaying castle hides an immeasurable...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi16">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Vettaiyan</p>
+                        <p style="color: #37f0a2;"> #4 in India </p>
+                          <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>A sought-after supercop gets caught in a series of unexpected events when he guns down a criminal in a...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi17">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Jabilamma Neeku Antha Kopama</p>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                           <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>Prabhu a young,chef living a regular life. One day his past recalls him which brings ba...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi18">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Sarangapani Jathakam</p>
+                        <p style="color: #37f0a2;"> #10 in India </p>
+                          <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>The story follows Sarangapani who strongly believes in astrology. Will his palm reveal the truth or w...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             
+
+        </div>
+
+
+
+        <div class="dm">
+         <h5>Shop: Rent New Movies</h5>
+         </div>
+        <div class="main-movie1">
+            <div class="box1  boxi19">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Sinners</p>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                           <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>Twin brothers (Jordan) return to their hometown to start again, only to discover that a...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi20">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Until Dawn</p>
+                        <!-- <p style="color: #37f0a2;"> #8 in India </p> -->
+                           <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>Hunted and trapped in a deadly time loop, Clover and friends have limited chances...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi21">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Ground Zero</p>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                           <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>Deputy Cmdt. Dubey leads a 2-year pursuit to eliminate Ghazi Baba, mastermind of...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi22">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>A Minecraft Movie</p>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                           <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>Four misfits are suddenly pulled through a mysterious portal into the Overworld: a...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi23">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>GULKAND</p>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                           <div class="icon"><i class="fa-solid fa-plus" style="color: white;"></i><i class="fa-solid fa-film" style="color: #ffffff;"></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">U/A 13+</p>
+                        <p>When young lovers unite - the whole world conspires to...but what happens when older-lovers re-unite?...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi24">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Paddington in Peru</p>
+                        <p style="color: #37f0a2;"> #10 in India </p>
+                          <div class="icon"><i class="fa-solid fa-plus" ></i><i class="fa-solid fa-film" ></i></div>
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>When Paddington learns that his aunt has gone missing from her retirement home...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             
+
+        </div>
+
+         <div class="dm">
+         <h5>Mystery and thriller movies</h5>
+         </div>
+        <div class="main-movie1">
+            <div class="box1  boxi25">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Girls to Buy</p>
+                          <div class="icon"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-film" ></i></div>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4"> MOVIE</p>
+                        <p>Ambitious Emi unexpectedly finds herself immersed in the luxurious yet treacherous realm of escorting celebri...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi26">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>K.G.F Chapter 2 (Hindi)</p>
+                          <div class="icon"><i class="fa-solid fa-plus" ></i><i class="fa-solid fa-film" ></i></div>
+                        <!-- <p style="color: #37f0a2;"> #8 in India </p> -->
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>Vijendra Ingalgi, Son of Anand Ingalgi continues the story of KGF and Rocky in...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi27">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>28 Degree Celsius</p>
+                          <div class="icon"><i class="fa-solid fa-plus" ></i><i class="fa-solid fa-film" ></i></div>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">NEW MOVIE</p>
+                        <p>28 degrees celsius is a romantic suspense thriller centred around Anjali, who...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi28">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Tiger 3</p>
+                          <div class="icon"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-film" ></i></div>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">2023</p>
+                        <p>Tiger (Salman Khan) is informed about a new military group that is...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi29">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Viduthalai Part 2 - Director's Cut</p>
+                          <div class="icon"><i class="fa-solid fa-plus" ></i><i class="fa-solid fa-film"></i></div>
+                        <!-- <p style="color: #37f0a2;"> #4 in India </p> -->
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4">U/A 13+</p>
+                        <p>Captured Vaathiyaar recalls his past as an oppressed teacher, drawn to communism, rising a...</p>
+                    </span>
+                </div>
+
+
+            </div>
+             <div class="box1  boxi30">
+                <div class="bagi">
+                    <i class="fa-solid fa-bag-shopping" style="color: #FFD43B;"></i>
+                </div>
+                <div class="prime">
+                    <img src="https://m.media-amazon.com/images/G/01/prime/marketing/slashPrime/prime_logo_White.CB646659517.png"
+                        alt="">
+
+                </div>
+                <div class="box1-menu">
+                    <span>
+                        <p>Fukrey 3</p>
+                        <div class="icon"><i class="fa-solid fa-plus" ></i><i class="fa-solid fa-film" ></i></div>
+                        <!-- <p style="color: #37f0a2;"> #10 in India </p> -->
+                        <p style="font-size: 14px;">Watch with a Prime membership</p>
+                        <p id="p4"> MOVIE</p>
+                        <p>In the third installment, the Fukras plan to take over Delhi, and run for city elections. However, the..</p>
+                    </span>
+                </div>
+
+
+            </div>
+             
+        </div>
+        <div class="button">
+            <button>See more</button>
+        </div>
+
+    </div>
+
+
+     <div class="footer">
+        <img src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/logo/pv_logo_white.CB548637580.png"
+            alt="" width="110px">
+        <ol>
+            <li><a href="">Terms and Privacy Notice</a></li>
+            <li><a href=""> Send us Feedbook</a> </li>
+            <li><a href=""> Help</a></li>
+            <p> &copy;1996-2025, Amazon.com, Inc. or its affiliates </p>
+        </ol>
+    </div>
+
+</body>
+
+</html>
